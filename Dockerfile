@@ -13,7 +13,7 @@ RUN mvn clean package -DskipTests
 
 # --- Stage 2: Create the final lightweight image (Runtime) ---
 # फाइनल इमेज के लिए केवल JRE (Java Runtime Environment) का उपयोग करें
-FROM eclipse-temurin:21-jre-slim
+FROM eclipse-temurin:21-jre-jammy
 
 # वर्किंग डायरेक्टरी सेट करें
 WORKDIR /app

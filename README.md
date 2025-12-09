@@ -9,28 +9,26 @@ A clean and structured backend service built using Spring Boot. This server hand
 * RESTful APIs
 * CRUD operations
 * Database integration
-* Layered architecture (Controller, Service, Repository)
+* Layered architecture (Controller, Service, Repository,Entity)
 * Exception handling
 * CORS configuration
-
-## Tech Stack
 
 * **Java**
 * **Spring Boot**
 * **Spring Data JPA**
-* **MySQL / PostgreSQL** (your choice)
+* **PostgreSQL** 
 * **Maven**
 
 ## Project Structure
 
 ```
 src/main/java
- └── com.example.project
-      ├── controller
+ └── Backend.Custom_tech
       ├── service
       ├── repository
       ├── model
       └── config
+      └── controller
 ```
 
 ## How to Run
@@ -44,7 +42,7 @@ git clone <your-repo-link>
 2. Configure `application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/yourdb
+spring.datasource.url=jdbc:postgresql://localhost:3306/my_db
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
@@ -55,15 +53,6 @@ spring.jpa.hibernate.ddl-auto=update
 ```bash
 mvn spring-boot:run
 ```
-
-## API Endpoints Example
-
-| Method | Endpoint        | Description   |
-| ------ | --------------- | ------------- |
-| GET    | /api/items      | Get all items |
-| POST   | /api/items      | Add new item  |
-| PUT    | /api/items/{id} | Update item   |
-| DELETE | /api/items/{id} | Delete item   |
 
 ## Contributing
 
